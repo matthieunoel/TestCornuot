@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Licornes Rangers: Green Adventure</title>
+
+    <!-- <script src="./Script.js"></script> -->
+
+    <style>
+        html body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100vw;
+            font-size: 100px;
+            font-weight: 900;
+        }
+        
+        #Insert {
+            max-width: 100vw;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="Insert"></div>
+
+    <script>
+        function AddFour() {
+            document.getElementById('Insert').innerHTML = document.getElementById('Insert').innerHTML + ' 4'
+            setTimeout(() => {
+                AddFour()
+            }, 1000)
+        }
+
+        AddFour()
+    </script>
+
+</body>
+
+</html>
