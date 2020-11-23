@@ -20,26 +20,32 @@
             font-size: 100px;
             font-weight: 900;
         }
-        
-        #Insert {
-            max-width: 100vw;
+
+        img {
+            width: 40%;
         }
     </style>
 
 </head>
 
 <body>
-    <div id="Insert"></div>
+    <div>
+        <table>
+            <tr>
+                <td><a><img src="Images/external-content.duckduckgo.com.jpg" alt="Bonnet Licorne"></a></td>
+                <td><a><img src="Images/external-content.chaussette.duckduckgo.com.jpg" alt="Chaussettes Licorne"></a></td>
+                <td><a><img src="Images/external-content.gant.duckduckgo.com.jpg" alt="Gants Licorne"></a></td>
+            </tr>
+            <tr>
+                <td><a><img src="Images/external-content.pantalon.duckduckgo.com.jpg" alt="Pantalon Licorne"></a></td>
+                <td><a><img src="Images/external-content.pull.duckduckgo.com.jpg" alt="Pull Licorne"></a></td>
+                <td><a><img src="Images/external-content.slip.duckduckgo.com.jpg" alt="Slip Licorne"></a></td>
+            </tr>
+        </table>
+    </div>
 
     <script>
-        function AddFour() {
-            document.getElementById('Insert').innerHTML = document.getElementById('Insert').innerHTML + ' 4'
-            setTimeout(() => {
-                AddFour()
-            }, 1000)
-        }
 
-        AddFour()
     </script>
 
 </body>
